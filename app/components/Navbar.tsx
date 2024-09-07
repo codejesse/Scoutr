@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../logo.png";
+import { NavbarLinks } from "./NavbarLinks";
 import Banner from "./Banner";
 
 export const Navbar = () => {
@@ -19,6 +20,7 @@ export const Navbar = () => {
             />
           </Link>
         </div>
+        <NavbarLinks />
       </nav>
     </>
   );
