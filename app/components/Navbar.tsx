@@ -21,6 +21,11 @@ export const Navbar = () => {
           </Link>
         </div>
         <NavbarLinks />
+
+        <div className="flex items-center gap-x-2 ms-auto md:col-span-3">
+          <button className="bg-white px-5 border py-3">Login</button>
+          <h1>Register</h1>
+        </div>
       </nav>
     </>
   );
