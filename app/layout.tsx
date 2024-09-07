@@ -7,28 +7,27 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Scoutr",
-  description:
-    "Welcome to Sofa Store - discover amazing Saas tools",
+  description: "Welcome to Scoutr - discover amazing Saas tools for your ideas",
   openGraph: {
-    title: "Sofa Store | Home",
-    description: "Discover the best deals on furniture at Sofa Store.",
-    url: "https://sofa-beta.vercel.app",
-    siteName: "Sofa Store",
+    title: "Scoutr",
+    description: "Discover amazing SaaS tools for your ideas",
+    url: "#",
+    siteName: "Scoutr",
     images: [
       {
-        url: "/sofa-og.png",
+        url: "#",
         width: 1200,
         height: 630,
-        alt: "Sofa Store - Best furniture deals",
+        alt: "Scoutr - discover amazing Saas tools.",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sofa Store | Home",
-    description: "Discover the best deals on furniture at Sofa Store.",
-    images: ["https://res.cloudinary.com/daiio9iqt/image/upload/v1725306571/8845e51a-1635-440e-bdfb-8e2cacda234d.png"],
+    title: "Scoutr",
+    description: "Discover amazing Saas tools.",
+    images: ["#"],
   },
 };
 
