@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../logo.png";
+import logo from "../app/logo.png";
 import { NavbarLinks } from "./NavbarLinks";
 import Banner from "./Banner";
 
@@ -24,7 +24,7 @@ export const Navbar = () => {
 
         <div className="flex items-center gap-x-2 ms-auto md:col-span-3">
           <button className="bg-white px-5 border py-3">Login</button>
-          <h1>Register</h1>
+          <button>Register</button>
         </div>
       </nav>
     </>
