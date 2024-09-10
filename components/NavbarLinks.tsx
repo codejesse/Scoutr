@@ -37,7 +37,7 @@ export function NavbarLinks() {
           key={item.id}
           className={cn(
             location === item.href
-              ? "underline text-semibold"
+              ? "underline font-semibold"
               : "hover:underline transition-all ease-in-out",
             ""
           )}

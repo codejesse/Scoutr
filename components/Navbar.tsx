@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo from "../app/logo.png";
 import { NavbarLinks } from "./NavbarLinks";
 import Banner from "./Banner";
+import { MobileMenu } from "./MobileMenu";
 
 export const Navbar = () => {
   return (
@@ -22,9 +23,12 @@ export const Navbar = () => {
         </div>
         <NavbarLinks />
 
-        <div className="flex items-center gap-x-2 ms-auto md:col-span-3">
-          <button className="bg-white px-5 border py-3">Login</button>
+        <div className="hidden md:flex xl:flex lg:flex items-center gap-x-2 ms-auto md:col-span-3">
+          <button className="bg-white px-5 py-3">Login</button>
           <button>Register</button>
+        </div>
+        <div className="flex lg:hidden md:hidden xl:hidden items-center gap-x-2 ms-auto md:col-span-3">
+          <MobileMenu />
         </div>
       </nav>
     </>
