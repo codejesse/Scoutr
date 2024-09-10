@@ -33,7 +33,7 @@ export function MobileMenu() {
               <Menu />
             </Button>
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent side="top">
             <SheetHeader>
               <SheetTitle>Edit profile</SheetTitle>
               <SheetDescription>
