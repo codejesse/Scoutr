@@ -1,9 +1,12 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../app/logo.png";
 import { NavbarLinks } from "./NavbarLinks";
 import Banner from "./Banner";
 import { MobileMenu } from "./MobileMenu";
+import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components";
+import { Button } from "./ui/button";
 
 export const Navbar = () => {
   return (
@@ -24,8 +27,12 @@ export const Navbar = () => {
         <NavbarLinks />
 
         <div className="hidden md:flex xl:flex lg:flex items-center gap-x-2 ms-auto md:col-span-3">
-          <button className="bg-white px-5 py-3">Login</button>
-          <button>Register</button>
+          <Button asChild className="bg-white px-5 py-3">
+            <LoginLink>Login</LoginLink>
+          </Button>
+          <Button asChild>
+            <RegisterLink>Register</RegisterLink>
+          </Button>
         </div>
         <div className="flex lg:hidden md:hidden xl:hidden items-center gap-x-2 ms-auto md:col-span-3">
           <MobileMenu />

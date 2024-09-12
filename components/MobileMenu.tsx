@@ -33,7 +33,7 @@ export function MobileMenu() {
           <SheetTitle>
             <Image src={logo} width={120} height={120} alt="scoutr-logo" />
           </SheetTitle>
-          <SheetDescription className="flex flex-col text-left">
+          <SheetDescription className="flex flex-col gap-3 text-left">
             {navbarLinks.map((item) => (
               <Link
                 href={item.href}
