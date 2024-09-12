@@ -1,3 +1,4 @@
+"use client";
 import { Menu, X } from "lucide-react";
 import {
   Sheet,
@@ -12,8 +13,14 @@ import {
 import { Button } from "./ui/button";
 import logo from "../app/logo.png";
 import Image from "next/image";
+import { navbarLinks } from "./NavbarLinks";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export function MobileMenu() {
+  const location = usePathname();
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -24,10 +31,23 @@ export function MobileMenu() {
       <SheetContent side="top">
         <SheetHeader>
           <SheetTitle>
-            <Image src={logo} width={150} height={150} alt="scoutr-logo" />
+            <Image src={logo} width={120} height={120} alt="scoutr-logo" />
           </SheetTitle>
-          <SheetDescription>
-            Make changes to your profile here. Click save when you're done.
+          <SheetDescription className="flex flex-col text-left">
+            {navbarLinks.map((item) => (
+              <Link
+                href={item.href}
+                key={item.id}
+                className={cn(
+                  location === item.href
+                    ? "underline font-semibold text-xl"
+                    : "hover:underline transition-all ease-in-out text-xl",
+                  ""
+                )}
+              >
+                {item.name}
+              </Link>
+            ))}
           </SheetDescription>
         </SheetHeader>
         {/* <SheetFooter>
