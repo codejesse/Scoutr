@@ -10,6 +10,7 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
 } from "./ui/dropdown-menu";
+import Link from "next/link";
 
 interface Props {
   email: string;
@@ -40,7 +41,7 @@ export function UserNav({ email, name, userImage }: Props) {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>Profile</DropdownMenuItem>
-          <DropdownMenuItem>Sell</DropdownMenuItem>
+          <DropdownMenuItem asChild><Link href="/sell">Sell your product</Link></DropdownMenuItem>
           <DropdownMenuItem>Billing</DropdownMenuItem>
           <DropdownMenuItem>Settings</DropdownMenuItem>
         </DropdownMenuGroup>
