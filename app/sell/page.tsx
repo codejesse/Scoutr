@@ -13,7 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 export default function sellRoute() {
   return (
-    <section className="max-w-7xl mx-auto px-4 md:px-8">
+    <section className="max-w-7xl mx-auto px-4 md:px-8 mb-14">
       <Card className="p-8 rounded-2xl">
         <form>
           <CardHeader>

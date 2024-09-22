@@ -67,12 +67,20 @@ export function TipTapEditor() {
   const editor = useEditor({
     extensions: [StarterKit],
     content: "<p>Hello World</p>",
+    editorProps: {
+      attributes: {
+        class: `focus:outline-none min-h-[150px] prose prose-sm sm:prose-base`,
+      },
+    },
   });
 
   return (
     <div>
       <MenuBar editor={editor} />
-      <EditorContent editor={editor} />
+      <EditorContent
+        editor={editor}
+        className="rounded-lg border p-2 min-h-[150px] mt-2"
+      />
     </div>
   );
 }
