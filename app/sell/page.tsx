@@ -1,3 +1,4 @@
+import { TipTapEditor } from "@/components/Editor";
 import { SelectCategory } from "@/components/SelectCategory";
 import {
   Card,
@@ -38,6 +39,10 @@ export default function sellRoute() {
             <div className="flex flex-col gap-y-2">
               <Label>Small summary</Label>
               <Textarea placeholder="Please describe your product shortly..." />
+            </div>
+            <div className="flex flex-col gap-y-2">
+              <Label>Description</Label>
+              <TipTapEditor />
             </div>
           </CardContent>
         </form>
